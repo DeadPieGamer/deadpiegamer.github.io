@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <!--Stating which set of characters are used. Useful in case you may want emoji-rich charactersets-->
+    <meta charset="UTF-8" />
+    <title>home</title>
+    <link rel="icon" href="/assets/images/site/favicon.png" />
+
+    <!-- Bootstrap frontend library (using CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <!-- Modified hero from Bootstrap: https://getbootstrap.com/docs/5.3/examples/heroes/ -->
+    <div class="gradient-background">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="/assets/images/resume/Felix Headshot 512x512.jpg"
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="Headshot of Felix"
+              width="450"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Who am I?
+            </h1>
+            <p class="lead">
+              I am a 22 year old Medialogy-student at Aalborg University in
+              Copenhagen, Denmark.<br />
+              I have a great interest in everything software development, and
+              especially enjoy making games. I mainly program in C# and make
+              shaders using hlsl, although I've recently taken to some fullstack
+              web development.<br />
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                role="button"
+                href="projects.html"
+                class="btn btn-light btn-lg px-4 me-med-2"
+              >
+                Portfolio
+              </a>
+              <a
+                role="button"
+                href="resume.html"
+                class="btn btn-outline-light btn-lg px-4"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Some own stuff -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <img
+          class="col-10 col-lg-4 object-fit-scale mb-2 rounded"
+          src="/assets/images/temp-for-assignment/cursed-thinking.jpg"
+          alt="A person thinking"
+          width="100%"
+        />
+        <div class="col-10 col-lg-8">
+          <h2 class="mt-3">Why does this site exist?</h2>
+          <p class="mt-3">
+            A bunch of reasons. Most pressing at the current moment, the fact
+            that I need to hand in a website for a web development course I'm
+            taking as part of my bachelor. Aside from that reason, I also just
+            wanted to be able to do more styling than is available through
+            sites.google.com and personalise my
+            <a href="https://felix.krog.dk">website</a>. I also wish to be able
+            to show off stuff I do to friends and family, and having worked with
+            VR for quite a few semestres, I have sadly been unable to have them
+            try anything I make, but a website is quite the accessible thing for
+            people to try.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="gradient-background"></div>
+
+    <!-- jQuery to make js a bunch easier to write -->
+    <script
+		  src="https://code.jquery.com/jquery-3.7.1.min.js"
+		  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		  crossorigin="anonymous"></script>
+    <script src="/js/getHeaderAndFooter.js"></script>
+
+    <!-- Bootstrap frontend library JS stuffs (using CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
