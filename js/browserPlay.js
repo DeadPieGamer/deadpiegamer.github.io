@@ -1,9 +1,7 @@
 $("#game-start-button").on("click", beginGame);
 
 function beginGame() {
-  var urlParts = $(location).attr("href").split("/");
-  var whatGame = urlParts[urlParts.length-1];
-
+  var whatGame = $('#game-start-button').attr("data-value")
   $("#game-start-button").remove();
-  $("#gameplay-frame").load(`/assets/game-demos/player-${whatGame}`);
+  $("#gameplay-frame").load(`${whatGame}`);
 }

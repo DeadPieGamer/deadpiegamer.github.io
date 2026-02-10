@@ -59,3 +59,9 @@
 .video-aspect {
   aspect-ratio: 16/9;
 }
+
+.unformat-link {
+  color: rgb(222, 226, 230);
+  text-decoration: none;
+  background-color: none;
+}

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <!--Stating which set of characters are used. Useful in case you may want emoji-rich charactersets-->
     <meta charset="UTF-8" />
-    <title>home</title>
+    <title>Home</title>
     <link rel="icon" href="/assets/images/site/favicon.png" />
 
     <!-- Bootstrap frontend library (using CDN) -->
@@ -36,18 +36,18 @@
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
               Who am I?
             </h1>
-            <p class="lead">
-              I am a 22 year old Medialogy-student at Aalborg University in
+            <p class="lead" id="part-with-age">
+              I am a {age} year old Medialogy-student at Aalborg University in
               Copenhagen, Denmark.<br />
               I have a great interest in everything software development, and
               especially enjoy making games. I mainly program in C# and make
-              shaders using hlsl, although I've recently taken to some fullstack
-              web development.<br />
+              shaders using hlsl, although I also take great interest in making
+              3D animations.<br />
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a
                 role="button"
-                href="projects.html"
+                href="portfolio.html"
                 class="btn btn-light btn-lg px-4 me-med-2"
               >
                 Portfolio
@@ -75,18 +75,16 @@
           width="100%"
         />
         <div class="col-10 col-lg-8">
-          <h2 class="mt-3">Why does this site exist?</h2>
+          <h2 class="mt-3">What role do I typically take?</h2>
           <p class="mt-3">
-            A bunch of reasons. Most pressing at the current moment, the fact
-            that I need to hand in a website for a web development course I'm
-            taking as part of my bachelor. Aside from that reason, I also just
-            wanted to be able to do more styling than is available through
-            sites.google.com and personalise my
-            <a href="https://felix.krog.dk">website</a>. I also wish to be able
-            to show off stuff I do to friends and family, and having worked with
-            VR for quite a few semestres, I have sadly been unable to have them
-            try anything I make, but a website is quite the accessible thing for
-            people to try.
+            As part of my Medialogy Masters and Bachelor I've worked a lot in
+            groups, where I often find myself taking an additional programming
+            role, assisting the main programmers whenever they get stuck on a
+            task, find a bug they cannot resolve, or elswhow find themselves in
+            over their head. <br />
+            I also write shaders used in these projects, such as making custom
+            lighting models or special effects, design the gameplay and levels,
+            UX testing and data analysis, and make 3D animations.
           </p>
         </div>
       </div>
@@ -96,10 +94,12 @@
 
     <!-- jQuery to make js a bunch easier to write -->
     <script
-		  src="https://code.jquery.com/jquery-3.7.1.min.js"
-		  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-		  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/getHeaderAndFooter.js"></script>
+    <script src="/js/writeAge.js"></script>
 
     <!-- Bootstrap frontend library JS stuffs (using CDN) -->
     <script
