@@ -1,7 +1,7 @@
 <!-- Modified navbar from Bootstrap: https://getbootstrap.com/docs/5.3/components/navbar/ -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="top-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">Felix Krog</a>
+    <a class="navbar-brand" href="/">Felix Krog</a>
     <button
       class="navbar-toggler"
       type="button"
