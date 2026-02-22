@@ -38,8 +38,8 @@
               Felix Bengtvig Krog
             </h1>
             <p class="lead">
-              If you wish to see a short, concise<small>, outdated</small>, pdf
-              version of my resume, see
+              If you wish to see longer, vague, outdated, pdf version of my
+              resume, see
               <a target="_blank" href="/assets/documents/Felix B Krog - CV.pdf"
                 >this pdf</a
               >!
@@ -55,79 +55,108 @@
         <div class="col-12 text-wrap my-0 py-0">
           <!-- Languages, software, and skills, with text wrapping around it -->
           <div
-            class="col-12 col-md-6 col-lg-4 mx-md-4 mx-lg-5 float-end border rounded p-3 mb-3 mb-lg-5 mt-0"
+            class="col-12 col-md-6 col-lg-4 mx-md-4 mx-lg-5 float-end border rounded px-3 py-2 mb-3 mb-lg-5 mt-0"
           >
-            <h2>Languages and Software</h2>
+            <h2 id="tools">Languages and Software</h2>
             <div class="row">
               <div class="col-9 pe-0 my-auto">
-                <p><b class="fs-5">Unity, C#</b></p>
+                <p><b>Unity,</b> <i class="font-weight-light">C#, GIMP</i></p>
               </div>
               <div class="col-3 ps-0 my-auto">
-                <p class="replace-year fs-5">{year:2018}</p>
+                <p class="replace-year">{year:2018}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-9 pe-0 my-auto">
-                <p><b class="fs-5">ShaderGraph</b>, URP</p>
+                <p><b>ShaderGraph,</b> <i class="font-weight-light">URP</i></p>
               </div>
               <div class="col-3 ps-0 my-auto">
-                <p class="replace-year fs-5">{year:2022}</p>
+                <p class="replace-year">{year:2022}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-9 pe-0 my-auto">
-                <p><b class="fs-5">HLSL</b>, JavaScript, TypeScript, Python</p>
+                <p>
+                  <b>HLSL,</b>
+                  <i class="font-weight-light"
+                    >JavaScript, TypeScript, Python</i
+                  >
+                </p>
               </div>
               <div class="col-3 ps-0 my-auto">
-                <p class="replace-year fs-5">{year:2023}</p>
+                <p class="replace-year">{year:2023}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-9 pe-0 my-auto">
-                <p>HTML, CSS</p>
+                <p><i class="font-weight-light">HTML, CSS</i></p>
               </div>
               <div class="col-3 ps-0 my-auto">
-                <p class="replace-year fs-5">{year:2025}</p>
+                <p class="replace-year">{year:2025}</p>
               </div>
             </div>
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <div>
               <p>
                 <b class="fs-5">Experienced Unity Developer</b>
-                <i class="font-weight-light">with extensive URP experience</i>
+                <small>
+                  <i class="font-weight-light">with extensive URP experience</i>
+                </small>
               </p>
               <p>
-                <b class="fs-5">Cross-Disciplinary Communication</b>
-                <i class="font-weight-light"
-                  >fluent in programming and design both</i
-                >
+                <b class="fs-5">Custom Lighting Models</b>
+                <small>
+                  <i class="font-weight-light">
+                    stylized lighting models optimised for lower-end devices
+                  </i>
+                </small>
+              </p>
+              <p>
+                <b class="fs-5">Pipeline Tools</b>
+                <small> </small>
+                <i class="font-weight-light">
+                  close collaboration with artists & designers to develop tools
+                  for their workcases
+                </i>
               </p>
               <p>
                 <b class="fs-5">3D Animator</b>
-                <i class="font-weight-light"
-                  >from character animation to VFX and post-production</i
-                >
-              </p>
-              <p>
-                <b class="fs-5">UX Tester</b>
-                <i class="font-weight-light"
-                  >both methodology and subsequent data analysis</i
-                >
+                <small>
+                  <i class="font-weight-light">
+                    from character animation to VFX and post-production
+                  </i>
+                </small>
               </p>
               <p>
                 <b class="fs-5">Digital Content Creation</b>
-                <i class="font-weight-light">including 2D, 3D, and tech art</i>
+                <small>
+                  <i class="font-weight-light">
+                    including 2D, 3D, tech art, and SFX
+                  </i>
+                </small>
               </p>
               <p>
-                <b class="fs-5">DCC Tools</b>
-                <i class="font-weight-light"
-                  >close collaboration with artists & designers to develop tools
-                  for their workcases</i
-                >
+                <b class="fs-5">Cross-Disciplinary Communication</b>
+                <small>
+                  <i class="font-weight-light">
+                    fluent in both programming and design
+                  </i>
+                </small>
+              </p>
+              <p>
+                <b class="fs-5">UX Testing</b>
+                <small>
+                  <i class="font-weight-light">
+                    both methodology and subsequent data analysis
+                  </i>
+                </small>
               </p>
             </div>
           </div>
-          <h2>Contact</h2>
+
+          <!-- Done with Language, Software, and Skills -->
+
+          <h2 id="contact">Contact</h2>
           <ul class="no-dot-ul ps-0">
             <li>Copenhagen, Denmark</li>
             <li>+45 91 52 65 34</li>
@@ -140,7 +169,7 @@
               </a>
             </li>
           </ul>
-          <h2>About me</h2>
+          <h2 id="about-me">About me</h2>
           <p>
             A person with a large interest in shaders, 3D animation, and game
             creation. I like custom lighting models, DCC tools, and animated
@@ -151,7 +180,9 @@
             communication. I try to let everyone use their strengths, as well as
             actively seek and give feedback.
           </p>
-          <h2>Work</h2>
+
+          <!-- Work Sections -->
+          <h2 id="work">Work</h2>
           <p>
             2024-present - <b class="fs-5">Teacher's Assistant</b>, Aalborg
             University:<br />
@@ -171,14 +202,18 @@
             camp.
           </p>
           <p>
-            2022-present - Other Volunteer Roles: <br />
+            2017-present - Other Volunteer Roles: <br />
             I also take various other volunteer roles, such as being treasurer
             for the university café, Kaffepletten, and volunteering at different
             festivals with friends, including Copenhell and Ringsted Festival.
           </p>
         </div>
+
+        <!-- Place under info-box -->
+
+        <!-- Left -->
         <div class="col-12 col-lg-6 mt-0 pt-0">
-          <h2>Education</h2>
+          <h2 id="education">Education</h2>
           <p>
             2025-present - <b class="fs-5">Medialogy Masters</b>, Aalborg
             University:
@@ -224,8 +259,9 @@
             university competition.
           </p>
         </div>
+        <!-- Right -->
         <div class="col-12 col-lg-6">
-          <h2>Spare Time</h2>
+          <h2 id="spare-time">Spare Time</h2>
           <p>
             <b>Bouldering:</b><br />
             I spend a lot of my free time bouldering with friends in the
