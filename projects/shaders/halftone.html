@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <title>Retrace</title>
+    <title>Halftone Lighting</title>
     <link rel="icon" href="/assets/images/site/favicon.png" />
 
     <!-- Bootstrap frontend library -->
@@ -20,61 +20,95 @@
 
     <!-- Title element -->
     <div
-      style="height: 175px; background-color: #a81000"
+      style="height: 175px; background-color: goldenrod"
       class="mb-4 py-2 d-flex justify-content-center align-content-center flex-wrap"
     >
-      <h1 class="game-title">Retrace</h1>
-    </div>
-
-    <!-- Playable itch version -->
-    <div class="container my-3">
-      <div class="text-center justify-content-center">
-        <h2 class="mb-3">Try it out!</h2>
-        <button
-          id="game-start-button"
-          data-value="/assets/game-demos/player-retrace.xml"
-          class="btn btn-lg btn-outline-light"
-        >
-          Play in browser
-        </button>
-        <div id="gameplay-frame"></div>
-      </div>
+      <h1 class="game-title">Halftone Lighting</h1>
     </div>
 
     <!-- Information about the game and skills -->
     <div class="container my-4">
       <div class="row justify-content-center">
         <div class="col-lg-7">
-          <h2>Premise</h2>
+          <h2>Premise and End Result</h2>
           <p>
-            Retrace is a first person puzzle game that centers around 'the
-            Transplacer', a gun that shoots bullets that move towards you from
-            wherever you're pointing. With this gun, you're tasked to solve a
-            variety of puzzles, hitting different switches with the bullets. It
-            won the game jam "Hiddel's NES Jam", for which the game was made
-            within 72 hours with the theme of "Reverse".
+            I wanted to make a custom lighting model that mimics the halftone
+            dotted pattern of comic books with how the lighting is rendered.
           </p>
-          <h2>Project Work</h2>
+
+          <h2>Process</h2>
           <p>
-            Working in a team of three, I created everything but the music and
-            SFX.
+            I first created a regular lighting shader, using Lambert diffuse,
+            Phong specular, and others. Then, I created a halftone pattern using
+            a voronoi noise pattern, making the dots size screenspace dependant.
+            The shadows calculated from the previous calculations were then
+            smoothstepped between adjustable values, those values determining
+            where the dotted halftone pattern begins, and where the dots have
+            grown so big that the object is fully encapsulated in shadows. The
+            values being adjustable allowed artists to easily alter the shadow
+            behaviour based on how the lighting should react to any given
+            material.
           </p>
         </div>
 
         <div class="col-lg-3 border rounded p-3">
           <h2>Info</h2>
           <ul>
-            <li>Year: 2021</li>
-            <li>Type: Game Jam</li>
-            <li>Team Size: 3</li>
+            <li>Year: 2025</li>
+            <li>Type: Custom Lighting Model</li>
+            <li>Engine: Unity</li>
+            <li>Tools: Shader graph and HLSL</li>
+            <li>Time: 3 weeks</li>
           </ul>
           <h2>Skills</h2>
           <ul>
-            <li>C#</li>
-            <li>Unity</li>
-            <li>Game design</li>
+            <li>Shader Development</li>
+            <li>Custom Lighting Models</li>
+            <li>Outline Shaders</li>
           </ul>
+          <h2>
+            <a
+              class="text-body-primary text-decoration-none link-light"
+              href="http://github.com/deadlap/P606"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                />
+              </svg>
+              GitHub</a
+            >
+          </h2>
+          <h2>
+            <a
+              class="text-body-primary text-decoration-none link-light"
+              href="https://deadpiegamer.itch.io/killer-on-board"
+              ><img
+                src="/assets/svg/itchio-logo-textless-white.svg"
+                height="26px"
+                alt="itch.io icon"
+              />
+              itch.io</a
+            >
+          </h2>
         </div>
+      </div>
+    </div>
+
+    <div class="container my-3">
+      <div class="row justify-content-center text-center">
+        <h2 class="mb-2 col-lg-10 col-xl-8">Cutscene from project</h2>
+        <iframe
+          class="video-aspect col-lg-10 col-xl-8"
+          src="https://drive.google.com/file/d/1bPfleDk7tBiNH9b66aG8YoOIfbFSOwXv/preview"
+          width="100%"
+        ></iframe>
       </div>
     </div>
 
@@ -116,24 +150,24 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/assets/images/projects/personal/retrace/cover.png"
-                  alt="A pixel-art game cover"
+                  src="/assets/images/projects/uni/killer-on-board/gameplay-1.png"
+                  alt="A placeholder image"
                   class="bd-placeholder-img"
                   width="100%"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assets/images/projects/personal/retrace/gameplay-1.png"
-                  alt="A pixel-art game gameplay"
+                  src="/assets/images/projects/uni/killer-on-board/gameplay-2.png"
+                  alt="A placeholder image"
                   class="bd-placeholder-img"
                   width="100%"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assets/images/projects/personal/retrace/gameplay-2.png"
-                  alt="A pixel-art game gameplay"
+                  src="/assets/images/projects/uni/killer-on-board/cutscene-still.png"
+                  alt="A placeholder image"
                   class="bd-placeholder-img"
                   width="100%"
                 />
@@ -168,7 +202,7 @@
       </div>
     </div>
 
-    <div id="footer" style="background-color: #a81000"></div>
+    <div id="footer" style="background-color: goldenrod"></div>
 
     <!-- jQuery to make js a bunch easier to write -->
     <script

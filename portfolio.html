@@ -3,7 +3,8 @@
   <head>
     <!--Stating which set of characters are used. Useful in case you may want emoji-rich charactersets-->
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
+    <meta name="navigation" content="portfolio" />
+    <title>Felix's Portfolio</title>
     <link rel="icon" href="/assets/images/site/favicon.png" />
 
     <!-- Bootstrap frontend library (using CDN) -->
@@ -21,7 +22,17 @@
 
     <div class="container px-4 pt-5 my-5 text-center border-bottom">
       <h1 class="col-12 fw-bold text-body-emphasis">Portfolio</h1>
-      <p class="lead">Here is a list of projects that I have worked on.</p>
+      <p class="lead pb-0 mb-0">A list of specific features and shaders I've made.</p>
+      <div class="gap-2 d-inline-flex mb-3 pt-0 mt-0">
+        <p class="lead my-auto">Looking for all projects I've worked on? Go here:</p>
+        <a
+          role="button"
+          href="projects.html"
+          class="btn btn-outline-light btn-sm pl-4"
+        >
+          Projects
+        </a>
+      </div>
       <div class="overflow-hidden" style="max-height: 30vh">
         <img
           src="/assets/images/projects/uni/doap/blueprint.png"
@@ -36,132 +47,20 @@
     <div class="container my-5">
       <div class="row justify-content">
         <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/doap.html">
+          <a href="projects/shaders/halftone.html">
             <img
-              src="/assets/images/projects/uni/doap/cover.png"
+              src="/assets/images/projects/uni/killer-on-board/cutscene-still.png"
               class="card-img-top cover-image"
-              alt="A tic-tac-toe board"
+              alt="A cartoonishly lit character with a halftone shading pattern"
             />
           </a>
           <div class="card-body">
-            <h5 class="card-title">DOAP Project</h5>
+            <h5 class="card-title">Halftone Lighting</h5>
             <p class="card-text">
-              Difficulty Oriented Action Planning ─ Dynamic Difficulty
-              Adjustment for Goal Oriented Action Planning agents.
+              A custom lighting model that casts shadows with a halftone dotted
+              pattern.
             </p>
-            <a href="projects/uni/doap.html" class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/killeronboard.html">
-            <img
-              src="/assets/images/projects/uni/killer-on-board/cover.png"
-              class="card-img-top cover-image"
-              alt="A lineup of 4 cartoony people. The words Killer on Board are written on the wall behind them"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Killer on Board</h5>
-            <p class="card-text">
-              A procedurally generated murder mystery with AI-powered
-              conversations.
-            </p>
-            <a href="projects/uni/killeronboard.html" class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/rtcg.html">
-            <img
-              src="/assets/images/projects/uni/rtcg/cover.png"
-              class="card-img-top cover-image"
-              alt="Four different computer-graphic images in a grid. The top left is a cartoony person. Top right a sphere distorted to fit a bezier-curve. Bottom left a mesh from a gaussian splat in a virtual environment. Bottom right a set of cubes being lit by a red light."
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">RTCG Course</h5>
-            <p class="card-text">
-              The mini-projects done in the Real-Time Copmuter Graphics course of my Medialogy Masters.
-            </p>
-            <a href="projects/uni/rtcg.html" class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/arm-bot-adventure.html">
-            <img
-              src="/assets/images/projects/uni/arm-bot-adventure/cover.png"
-              class="card-img-top cover-image"
-              alt="A placeholder image"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">A.R.M. Bot Adventure</h5>
-            <p class="card-text">
-              A VR platforming game where you don't have any legs.
-            </p>
-            <a
-              href="projects/uni/arm-bot-adventure.html"
-              class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/fingerspelling.html">
-            <img
-              src="/assets/images/projects/uni/fingerspelling/cover.png"
-              class="card-img-top cover-image"
-              alt="A placeholder image"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">FingerSpelling</h5>
-            <p class="card-text">
-              A VR spellcasting game that teaches you the danish sign language.
-            </p>
-            <a href="projects/uni/fingerspelling.html" class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/personal/retrace.html">
-            <img
-              src="/assets/images/projects/personal/retrace/cover.png"
-              class="card-img-top cover-image"
-              alt="A pixel game cover"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Retrace</h5>
-            <p class="card-text">
-              A retro-inspired FPS puzzle game that won a game jam.
-            </p>
-            <a href="projects/personal/retrace.html" class="btn btn-primary"
-              >Read more</a
-            >
-          </div>
-        </div>
-        <div class="card col-12 col-sm-10 col-md-6 col-xl-4">
-          <a href="projects/uni/ordhandel.html">
-            <img
-              src="/assets/images/projects/uni/ordhandel/cover.png"
-              class="card-img-top cover-image"
-              alt="Handdrawn buildings with the middle one being a shop named Ordhandel."
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Ordhandel</h5>
-            <p class="card-text">
-              A Serious Game minigame-collection aimed at teaching the danish words for
-              common food items.
-            </p>
-            <a href="projects/uni/ordhandel.html" class="btn btn-primary"
+            <a href="projects/shaders/halftone.html" class="btn btn-primary"
               >Read more</a
             >
           </div>

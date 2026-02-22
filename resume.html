@@ -3,7 +3,8 @@
   <head>
     <!--Stating which set of characters are used. Useful in case you may want emoji-rich charactersets-->
     <meta charset="UTF-8" />
-    <title>Resume</title>
+    <meta name="navigation" content="resume" />
+    <title>Felix's Resume</title>
     <link rel="icon" href="/assets/images/site/favicon.png" />
 
     <!-- Bootstrap frontend library (using CDN) -->
@@ -50,122 +51,174 @@
 
     <!-- Some own stuff -->
     <div class="container my-5">
-      <div class="row justify-content">
-        <div class="col-12 col-md-10 col-lg-8">
+      <div class="row justify-content-center">
+        <div class="col-12 text-wrap my-0 py-0">
+          <!-- Languages, software, and skills, with text wrapping around it -->
+          <div
+            class="col-12 col-md-6 col-lg-4 mx-md-4 mx-lg-5 float-end border rounded p-3 mb-3 mb-md-4 mb-lg-5 mt-0"
+          >
+            <h2>Languages and Software</h2>
+            <div class="row">
+              <div class="col-9 pe-0 my-auto">
+                <p><b class="fs-5">Unity, C#</b></p>
+              </div>
+              <div class="col-3 ps-0 my-auto">
+                <p class="replace-year fs-5">{year:2018}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 pe-0 my-auto">
+                <p><b class="fs-5">ShaderGraph</b>, URP</p>
+              </div>
+              <div class="col-3 ps-0 my-auto">
+                <p class="replace-year fs-5">{year:2022}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 pe-0 my-auto">
+                <p><b class="fs-5">HLSL</b>, JavaScript, TypeScript, Python</p>
+              </div>
+              <div class="col-3 ps-0 my-auto">
+                <p class="replace-year fs-5">{year:2023}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 pe-0 my-auto">
+                <p>HTML, CSS</p>
+              </div>
+              <div class="col-3 ps-0 my-auto">
+                <p class="replace-year fs-5">{year:2025}</p>
+              </div>
+            </div>
+            <h2>Skills</h2>
+            <div>
+              <p>
+                <b class="fs-5">Experienced Unity Developer</b>
+                <i class="font-weight-light">with extensive URP experience</i>
+              </p>
+              <p>
+                <b class="fs-5">Cross-Disciplinary Communication</b>
+                <i class="font-weight-light"
+                  >fluent in programming and design both</i
+                >
+              </p>
+              <p>
+                <b class="fs-5">3D Animator</b>
+                <i class="font-weight-light"
+                  >from storyboarding, to rigging, and all the way to final
+                  product</i
+                >
+              </p>
+              <p>
+                <b class="fs-5">UX Tester</b>
+                <i class="font-weight-light"
+                  >both methodology and subsequent data analysis</i
+                >
+              </p>
+              <p>
+                <b class="fs-5">Digital Content Creation</b>
+                <i class="font-weight-light">including 2D, 3D, and tech art</i>
+              </p>
+            </div>
+          </div>
           <h2>Contact</h2>
-          <ul class="no-dot-ul">
-            <li>Copenhagen, Denmark +45 91 52 65 34</li>
+          <ul class="no-dot-ul ps-0">
+            <li>Copenhagen, Denmark</li>
+            <li>+45 91 52 65 34</li>
             <li>
-              <a href="mailto:felix@krog.dk" class="unformat-link"
-                >felix@krog.dk</a
-              >
+              <a href="mailto:felix@krog.dk">felix@krog.dk</a>
             </li>
-            <li>Nationality: Danish</li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/felixkrog/"
-                class="unformat-link"
-                >www.linkedin.com/in/felixkrog/</a
-              >
+              <a href="https://www.linkedin.com/in/felixkrog/">
+                www.linkedin.com/in/felixkrog/
+              </a>
             </li>
           </ul>
           <h2>About me</h2>
           <p>
-            A person with a large interest within the design and development of
-            software and games. I like modular programming, creating tools and
-            animations, and actively seek to improve my skills.
+            A person with a large interest in shaders, 3D animation, and game
+            creation. I like custom lighting models, DCC tools, and animated
+            cutscenes, and actively seek to improve my skills.
           </p>
           <p>
-            When working in teams I try to let everyone use their strengths, as
-            well as actively seek and give feedback.
+            I've worked a lot in teams, strengthening my cross disciplinary
+            communication. I try to let everyone use their strengths, as well as
+            actively seek and give feedback.
           </p>
-        </div>
-        <div class="col-10 col-md-8 col-lg-4">
-          <h2>Skills</h2>
-          <div class="fraction-2x-any-grid mt-3">
-            <p>C#</p>
-            <p>Unity</p>
-            <p>HLSL</p>
-            <p>3D Animation</p>
-            <p>Python</p>
-            <p>Data Analysis</p>
-            <p>Excel</p>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-9 col-lg-6">
-          <h2>Education</h2>
-          <p>
-            In the summer of 2025 I completed my
-            <a
-              href="https://www.aau.dk/uddannelser/bachelor/medialogi-kobenhavn"
-              class="unformat-link"
-              >bachelor in Medialogy at Aalborg University in Copenhagen</a
-            >, and I'm currently studying the
-            <a
-              href="https://www.en.aau.dk/education/master/medialogy-cph"
-              class="unformat-link"
-              >Medialogy Masters</a
-            >
-            at the very same. I've had one published paper (<a
-              href="https://doi.org/10.1007/978-3-032-12408-1_9"
-              >Oudrup, C.B. et al. (2026). Killer on Board: Addressing the
-              Narrative Paradox by Utilizing LLM-Driven NPCs. In: Reyes, M.C.,
-              Nack, F. (eds) Interactive Storytelling. ICIDS 2025. Lecture Notes
-              in Computer Science, vol 16374. Springer, Cham.</a
-            >). Projects I've done as part of these educations can be found on
-            <a href="/portfolio.html">my portfolio page</a>. Some highligthed
-            courses are listed here:
-          </p>
-          <p>
-            <b>Real-Time Computer Graphics</b> (final grade of 12): <br />
-            A course of the Medialogy Masters covering shaders, 3D animation,
-            virtual productions, photogrammetry and gaussian splatting, and 3D
-            object analysis. A pictorial of my mini-projects for the course and
-            more can be found at my
-            <a href="/projects/uni/rtcg.html">RTCG page</a>.
-          </p>
-          <p>
-            <b>Game Design and Development</b> (final grade of 12): <br />
-            A course of the Medialogy Bachelor covering user-centric design
-            principles in video game contexts. For this course I created a game
-            with another person that was tested multiple times throughout every
-            development step, from paper prototype to final product. It won the
-            "Best Concept" award in a university competition.
-          </p>
-        </div>
-        <div class="col-12 col-md-9 col-lg-6">
           <h2>Work</h2>
           <p>
-            <b>Teacher's Assistant:</b><br />
-            Since the autumn of 2024 I've worked as a teacher's assistant for
-            different courses on the Medialogy bachelor. Respectively the
-            Mathematics for Multimedia Experiences and the UX: Quantitative
-            User-Evaluations courses.
+            2024-present - <b class="fs-5">Teacher's Assistant</b>, Aalborg
+            University:<br />
+            Helped explain the Mathematics for Multimedia Experiences and the
+            UX: Quantitative User-Evaluations courses, as well as held solo
+            lectures to assist the students.
           </p>
-        </div>
-        <div class="col-12 col-md-9 col-lg-6">
-          <h2>Volunteer Work</h2>
           <p>
-            <b>Game Development Camp:</b><br />
-            I've been a volunter at
-            <a href="https://game.unf.dk/">the UNF Game Development Camp</a>
-            since 2023, and currently have the role of "Faglig Ansvarlig"
-            (Academic Coordinator). The camp itself is a week long camp where
-            gymnasium students learn to, and develop a game in teams. They are
-            taught in different subjects, being 2D, 3D, programming, and sound.
-            In my role, I coordinate the academic contents of the camp alongside
-            with the different subject responsibles, and the other volunteers.
-            <br />
-            <b>Other Volunteer Roles:</b><br />
+            2022-present -
+            <b class="fs-5">Game Art Teacher & Project Coordinator</b>, UNF GDC,
+            volunteer:<br />
+            Mentoring young, aspiring game developers in the process of learning
+            how to create games, shaders, and game graphics, at the
+            <a href="https://game.unf.dk/" class="respectful-link"
+              >UNF Game Development Camp</a
+            >. Currently the main coordinator of the academic contents of the
+            camp.
+          </p>
+          <p>
+            2022-present - Other Volunteer Roles: <br />
             I also take various other volunteer roles, such as being treasurer
             for the university café, Kaffepletten, and volunteering at different
             festivals with friends, including Copenhell and Ringsted Festival.
           </p>
         </div>
-        <div class="col-12 col-md-9 col-lg-6">
+        <div class="col-12 col-lg-6 mt-0 pt-0">
+          <h2>Education</h2>
+          <p>
+            2025-present - <b class="fs-5">Medialogy Masters</b>, Aalborg
+            University:
+            <br />
+            Specialising in technical art and 3D animation. Developed multiple
+            graphical Unity shaders, in-engine DCC tools actively used by
+            artists and designers across multiple groups projects, and made
+            multiple 3D animations. Projects I've done as part of these
+            educations can be found on
+            <a href="/portfolio.html" class="respectful-link"
+              >my portfolio page</a
+            >. Some highligthed courses are listed here:
+          </p>
+          <p>
+            <b class="fs-5">Real-Time Computer Graphics</b> (final grade of 12):
+            <br />
+            Covering shaders, 3D animation, virtual productions, photogrammetry
+            and gaussian splatting, and 3D object analysis. A pictorial of my
+            mini-projects for the course and more can be found at my
+            <a href="/projects/uni/rtcg.html" class="respectful-link"
+              >RTCG page</a
+            >.
+          </p>
+          <p>
+            2022-2025 - <b class="fs-5">Medialogy Bachelor</b>, Aalborg
+            University: <br />
+            Specialising in technical art and 3D animation. Developed multiple
+            graphical Unity shaders, and made multiple 3D animations, as well as
+            having a paper puplised (<a
+              href="https://doi.org/10.1007/978-3-032-12408-1_9"
+              class="respectful-link"
+              >Killer on Board: Addressing the Narrative Paradox by Utilizing
+              LLM-Driven NPCs</a
+            >) in the journal Interactive Storytelling.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 mt-lg-5">
+          <p>
+            <b class="fs-5">Game Design and Development</b> (final grade of 12):
+            <br />
+            Covering user-centric design principles in video game contexts.
+            Worked with another person to create a game that was tested multiple
+            times throughout every development step, from paper prototype to
+            final product. It won the "Best Concept" award in a cross-semester
+            university competition.
+          </p>
           <h2>Spare Time</h2>
           <p>
             <b>Bouldering:</b><br />
@@ -204,5 +257,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/writeAge.js"></script>
   </body>
 </html>
