@@ -22,6 +22,9 @@
           <a class="nav-link onpage-portfolio" href="/portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link onpage-projects" href="/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link onpage-resume" href="/resume.html">Resume</a>
         </li>
       </ul>
